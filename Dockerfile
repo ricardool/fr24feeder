@@ -1,4 +1,4 @@
-FROM ubuntu:19.04
+FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV FLIGHTRADAR_VERSION 1.0.24-5
