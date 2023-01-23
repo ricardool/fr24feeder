@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV FLIGHTRADAR_VERSION 1.0.24-5
+ENV FLIGHTRADAR_VERSION 1.0.34-0
 ENV ARCH amd64
 
 RUN apt-get update -y
