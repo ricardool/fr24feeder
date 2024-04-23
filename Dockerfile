@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:rolling
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV FLIGHTRADAR_VERSION 1.0.46-2
@@ -6,7 +6,7 @@ ENV ARCH amd64
 
 RUN apt-get update -y
 RUN apt-get install -y wget
-RUN wget https://repo-feed.flightradar24.com/linux_x86_64_binaries/fr24feed_${FLIGHTRADAR_VERSION}_${ARCH}.tgz
+RUN wget https://repo-feed.flightradar24.com/linux_binaries/fr24feed_${FLIGHTRADAR_VERSION}_${ARCH}.tgz
 RUN tar zxf fr24feed_${FLIGHTRADAR_VERSION}_${ARCH}.tgz
 
 WORKDIR fr24feed_${ARCH}
